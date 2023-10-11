@@ -1,18 +1,17 @@
 import React from "react";
-import { Box, Card, CardContent, Typography, Button } from "@mui/material";
+import { Box, Card, CardContent, Typography } from "@mui/material";
 
 const TodayForecastCard = ({ currentWeather }) => {
-  console.log("currentWeather>>>", currentWeather);
   const TodayForecast = [
     {
       id: 1,
       header: "Feels Like",
-      value: `${currentWeather?.main.feels_like}`,
+      value: `${currentWeather?.main.feels_like}`
     },
     { id: 2, header: "Humidity", value: `${currentWeather?.main.humidity}%` },
     { id: 3, header: "Wind", value: `${currentWeather?.wind.speed}` },
     { id: 4, header: "Visibility", value: `${currentWeather?.visibility}` },
-    { id: 5, header: "Pressure", value: `${currentWeather?.main.pressure}` },
+    { id: 5, header: "Pressure", value: `${currentWeather?.main.pressure}` }
 
     // `${currentWeather.visibility}`
   ];
@@ -24,8 +23,7 @@ const TodayForecastCard = ({ currentWeather }) => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            gap: "4rem",
-            // justifyContent: "center",
+            gap: "4rem"
           }}
         >
           <Box>
@@ -70,7 +68,6 @@ const TodayForecastCard = ({ currentWeather }) => {
               );
             })}
           </Box>
-          {/* <Button variant="contained">sssssssssssssss </Button> */}
         </CardContent>
       </Card>
     </Box>

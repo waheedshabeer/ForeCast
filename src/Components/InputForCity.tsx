@@ -10,10 +10,9 @@ import {
 } from "@mui/material";
 
 const AutocompleteInput = ({ onSelect }) => {
-  const [inputValue, setInputValue] = useState("");
-  const [options, setOptions] = useState([]);
-  const [open, setOpen] = useState(false);
-  const [longLat, setlongLat] = useState();
+  const [inputValue, setInputValue] = useState<string>("");
+  const [options, setOptions] = useState<any>([]);
+  const [open, setOpen] = useState<boolean>(false);
   const inputRef = useRef(null); // Create a ref for the input element
 
   const handleChange = (event) => {

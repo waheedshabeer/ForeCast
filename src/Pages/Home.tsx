@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "../Components/Card";
 import { Box } from "@mui/material";
-import { Link } from "react-router-dom";
 
 const Home = () => {
   const forecastData = [

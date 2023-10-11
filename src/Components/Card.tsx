@@ -1,8 +1,8 @@
 import React from "react";
 import { Card, CardContent, Typography, Button } from "@mui/material";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const DynamicCard = ({ forecastItem, title, content, buttonText, onClick }) => {
+const DynamicCard = ({ forecastItem }) => {
   const navigate = useNavigate();
   const handleButtonClick = (route) => {
     navigate(route);
